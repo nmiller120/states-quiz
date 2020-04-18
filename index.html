@@ -1,0 +1,91 @@
+
+
+<!--DOCTYPE defines what version on HTML this is written in-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<!-- HTML tag defines the root of an HTML document -->
+<html xmlns="http://www.w3.org/1999/xhtml">  
+
+
+
+<!-- contains the "head" elements-->
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+	<!--Displays at the heading of the page in the browser-->
+	<title>State Facts</title> 
+	<link rel="stylesheet" type="text/css" href="states.css">
+	<style>
+		a { text-decoration: none; }
+		
+		header {
+			position : fixed; 
+			top : 0;
+			width : 100%;
+			height : 5vh;
+			font-size : 4vh;
+			background-color : #ebcc34;
+		}
+		
+		body {
+			padding-top : 4vh;
+		}
+	</style>
+
+
+	<script type="text/javascript" src="data.json"></script>
+	
+	<script>
+		function buildStateList() {			
+			// for each element in json data
+			for (x in data){
+				// hyperlink container
+				var link = document.createElement("a");
+				link.setAttribute("href", "http:\\\\192.168.1.114\\HTML%20Projects\\quiz.html?state=" + x);
+			
+				// container for state card
+				var stateCard = document.createElement("div");
+				stateCard.setAttribute("class", "states");
+				stateCard.style =  "background-image: url('" + data[x].imageLink + "')";
+				
+				// create header 
+				var header = document.createElement("h1");
+				header.style = "margin : 0; padding-bottom = 0;";
+				header.innerHTML = data[x].name;
+				
+				// create subtitle
+				var subtitle = document.createElement("p");
+				subtitle.style = "text-align : right; margin : 0; padding-top : 0;";
+				subtitle.innerHTML = data[x].nickname;
+				
+				// button it up
+				stateCard.appendChild(header);
+				//stateCard.appendChild(subtitle);
+				link.appendChild(stateCard);
+				document.body.appendChild(link);
+			}
+		}
+	</script>
+	
+	<!--script>
+		function buildStateList() {
+			text = ""
+			for (x in data) {
+				text += "<a href=\"https:\\\\en.wikipedia.org\\wiki\\" + data[x].name + "\">"
+				text += "<div class = \"states\" style = \"background-image: url('" + data[x].imageLink + "')\">"
+				text += "<h1 style = \"margin : 0; padding-botttom: 0;\"><b>" + data[x].name + "</h1>"
+				text += "<p style = \"text-align : right; margin : 0; padding-top : 0;\">"
+				text += "<b>" + data[x].nickname + "</p>"
+				text += "</div></a>"
+			}	
+			return text
+		}
+	</script-->
+
+</head>
+
+<header>
+	State Facts
+</header>
+<body><script>buildStateList();</script></body>
+</html>

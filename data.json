@@ -1,0 +1,146 @@
+data = [
+  {
+    "name": "Indiana",
+    "nickname": "The Hoosier State",
+    "dateAdmitted": "December 11, 1816 (19th)",
+    "stateCapitol": "Indianapolis",
+    "famousNative": "James Dean",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\indiana.png"
+  },
+  {
+    "name": "Michigan",
+    "nickname": "The Great Lake State",
+    "dateAdmitted": "January 26, 1837 (26th)",
+    "stateCapitol": "Lansing",
+    "famousNative": "Kid Rock",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\michigan.jpg"
+  },
+  {
+    "name": "California",
+    "nickname": "The Golden State",
+    "dateAdmitted": "September 9, 1850 (31st)",
+    "stateCapitol": "Sacremento",
+    "famousNative": "Leonardo DiCaprio",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\california.jpg"
+  },
+  {
+    "name": "Nevada",
+    "nickname": "The Silver State",
+    "dateAdmitted": "October 31, 1864 (36th)",
+    "stateCapitol": "Carson City",
+    "famousNative": "Nicholas Cage",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\nevada.jpg"
+  },
+  {
+    "name": "Hawaii",
+    "nickname": "The Aloha State",
+    "dateAdmitted": "August 21, 1959 (50th)",
+    "stateCapitol": "Honolulu",
+    "famousNative": "Barrack Obama",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\hawaii.jpg"
+  },
+  {
+    "name": "Texas",
+    "nickname": "The Lone Star State",
+    "dateAdmitted": "December 29, 1845 (28th)",
+    "stateCapitol": "Austin",
+    "famousNative": "Willie Nelson",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\texas.jpg"
+  },
+  {
+    "name": "Alaska",
+    "nickname": "The Last Frontier",
+    "dateAdmitted": "January 3, 1959 (49th)",
+    "stateCapitol": "Anchorage",
+    "famousNative": "Sarah Palin",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\alaska.jpeg"
+  },
+  {
+    "name": "Louisiana",
+    "nickname": "Bayou State",
+    "dateAdmitted": "April 30, 1812 (18th)",
+    "stateCapitol": "Baton Rouge",
+    "famousNative": "Louis Armstrong",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\louisiana.png"
+  },
+  {
+    "name": "Mississippi",
+    "nickname": "The Magnolia State",
+    "dateAdmitted": "December 10, 1817 (20th)",
+    "stateCapitol": "Jackson",
+    "famousNative": "Elvis Presley",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\mississippi.jpg"
+  },
+  {
+    "name": "Arkansas",
+    "nickname": "The Natural State",
+    "dateAdmitted": "June 15, 1836 (25th)",
+    "stateCapitol": "Little Rock",
+    "famousNative": "Johnny Cash",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\arkansas.jpg"
+  },
+  {
+    "name": "Kansas",
+    "nickname": "The Sunflower State",
+    "dateAdmitted": "January 29, 1861 (34th)",
+    "stateCapitol": "Topeka",
+    "famousNative": "Amelia Earhart",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\kansas.jpg"
+  },
+  {
+    "name": "New York",
+    "nickname": "The Empire State",
+    "dateAdmitted": "July 26, 1788 (11th)",
+    "stateCapitol": "Albany",
+    "famousNative": "Donald Trump",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\new york.jpg"
+  },
+  {
+    "name": "New Jersey",
+    "nickname": "The Garden State",
+    "dateAdmitted": "December 18, 1787 (3rd)",
+    "stateCapitol": "Trenton",
+    "famousNative": "Frank Sinatra",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\new jersey.jpg"
+  },
+  {
+    "name": "Pennsylvania",
+    "nickname": "Quaker State",
+    "dateAdmitted": "December 12, 1787 (2nd)",
+    "stateCapitol": "Harrisburg",
+    "famousNative": "Bill Cosby",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\pennsylvania.jpg"
+  },
+  {
+    "name": "Ohio",
+    "nickname": "The Buckeye State",
+    "dateAdmitted": "March 1, 1803 (17th)",
+    "stateCapitol": "Columbus",
+    "famousNative": "Neil Armstrong",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\ohio.jpg"
+  },
+  {
+    "name": "Illinois",
+    "nickname": "Land of Lincoln",
+    "dateAdmitted": "December 3, 1818 (21st)",
+    "stateCapitol": "Springfield",
+    "famousNative": "Walt Disney",
+    "uniqueFact": "",
+    "imageLink": "Images\\\\Scenic Photos\\\\illinois.jpg"
+  }
+]

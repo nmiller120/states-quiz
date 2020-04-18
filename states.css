@@ -1,0 +1,14 @@
+.states {
+	//background-color : black;
+	color : white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	margin : 20px;
+	padding : 2vh;
+	//padding-right : 20px;
+	font-size: 5vw;
+	font-weight: bold;
+	//background-image: url("Images\\Scenic Photos\\indiana.png");
+	background-position : center center;
+	background-color : black;
+}

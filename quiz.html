@@ -1,0 +1,93 @@
+
+
+<!--DOCTYPE defines what version on HTML this is written in-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<!-- HTML tag defines the root of an HTML document -->
+<html xmlns="http://www.w3.org/1999/xhtml">  
+
+
+
+<!-- contains the "head" elements-->
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+	<!--Displays at the heading of the page in the browser-->
+	<title>Quiz</title> 
+
+	<script type="text/javascript" src="data.json"></script>
+	<script type="text/javascript" src="questionData.json"></script>
+	<script src = "quiz.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="states.css">
+	<style>
+		body {
+			//background-color : black;
+			margin : 2vw;
+			padding : 2vw;
+			font-size: 5vw;
+			text-align : center;
+		}
+		
+		input[type="radio"] {
+			-ms-transform: scale(2.5); /* IE 9 */
+			-webkit-transform: scale(2.5); /* Chrome, Safari, Opera */
+			transform: scale(2.5);
+		}
+		
+		button {
+			-ms-transform: scale(4); /* IE 9 */
+			-webkit-transform: scale(4); /* Chrome, Safari, Opera */
+			transform: scale(4);
+		}
+		
+		label {
+			padding : 1vh;
+		}
+	</style>
+	
+<header>
+	<div class="states" id = "headerDiv">
+	<h2 style="margin: 0px;" id = "headerLabel"></h2></div>
+	<script>
+		var headElm = document.getElementById("headerLabel");
+		var headDivElm = document.getElementById("headerDiv");
+		var x = parseInt(getQueryString('state'));
+		headDivElm.style =  "background-image: url('" + data[x].imageLink + "')";
+		headElm.innerHTML =  "The " + data[x].name + " Quiz";
+	
+	</script>
+</header>
+<body>	
+	
+	
+	<!--div id = "containerQ0">	
+		<label for = "containerQ0">Question 1: What is this?<br></label>
+		<input type = "radio", name = "radioGroup0", value = 0>
+		<label>First name:</label><br>
+		<input type = "radio", name = "radioGroup0", value = 1>
+		<label>First name:</label><br>
+		<input type = "radio", name = "radioGroup0", value = 2>
+		<label>First name:</label><br>
+		<input type = "radio", name = "radioGroup0", value = 3>
+		<label>First name:</label><br>
+	</div-->
+
+	<script>
+	for (x in questionData){
+		buildQuestionHTML(x, parseInt(getQueryString('state')));
+		document.body.appendChild(document.createElement("br"));
+	}
+	
+	// submit button
+	submitButton = document.createElement("button");
+	submitButton.innerHTML = "Submit";
+	submitButton.addEventListener("click", onSubmit);
+	document.body.appendChild(submitButton);
+	
+	</script>
+	<br><br>
+	<label id = "answer"></label>
+
+</body>
+</html>

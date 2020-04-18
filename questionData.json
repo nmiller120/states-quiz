@@ -1,0 +1,21 @@
+questionData = [
+	{
+		"text" : "What is the nickname of ",
+		"stateAttribute" : "nickname"
+	},
+
+	{
+		"text" : "What is the capitol of ",
+		"stateAttribute" : "stateCapitol"
+	},
+
+	{
+		"text" : "On what date was this state admiitted to the union: ",
+		"stateAttribute" : "dateAdmitted"
+	},
+	
+	{
+		"text" : "Who is a famous native of ",
+		"stateAttribute" : "famousNative"
+	},
+];
