@@ -66,7 +66,7 @@ function onSubmit() {
 	if (document.getElementById("returnLink") == null) {
 		var returnLink = document.createElement("a");
 		returnLink.id = "returnLink";
-		returnLink.href = "http:\\\\192.168.1.114\\HTML%20Projects\\home.htm";
+		returnLink.href = "\\index.html";
 		returnLink.innerHTML = "Return to Home";
 		document.body.appendChild(returnLink);
 	}
